@@ -32,8 +32,8 @@
 
     <script>
         images = [
-            {filename: 'dd.jpg', author: 'Daniel Guermeur', subject: 'Zeus Guermeur'},
-            {filename: 'ee.jpg', author: 'Daniel Guermeur', subject: 'BBB Guermeur'}
+            {filename: 'zeus-guermeur2.jpeg', author: 'Daniel Guermeur', subject: 'Zeus Guermeur'},
+            {filename: 'zeus-guermeur1.jpeg', author: 'Daniel Guermeur', subject: 'Zeus Guermeur'},
         ];
     </script>
 <body>
@@ -45,7 +45,7 @@
 </div>
 
 <div style="text-align: center;">
-    <img id='imageId' src="" style='border: solid 5px #333'/>
+    <img id='imageId' src="" style='border: solid 5px #333; max-width: 800px;'/>
     <script type="text/javascript">
         const oneImage = images[Math.floor(Math.random() * images.length)];
         document.getElementById("imageId").src = "images/" + oneImage.filename;
