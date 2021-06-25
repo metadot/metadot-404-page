@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            color: #777;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #ddd;
+            vertical-align: middle;
+            display: table-cell;
+            margin: 2em auto;
+        }
+
+        .sorry {
+            font-size: 67px;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+    </style>
+
+    <script>
+        images = [
+            {filename: 'dd.jpg', author: 'Daniel Guermeur', subject: 'Zeus Guermeur'},
+            {filename: 'ee.jpg', author: 'Daniel Guermeur', subject: 'BBB Guermeur'}
+        ];
+    </script>
+<body>
+
+<div style="padding-bottom: 50px">
+    <div class="sorry">SORRY</div>
+    <p>We could not find that page.</p>
+    <p>Meet our staff and customer's pet or <a href="/">go to our home page</a>.</p>
+</div>
+
+<div style="text-align: center;">
+    <img id='imageId' src="" style='border: solid 5px #333'/>
+    <script type="text/javascript">
+        const oneImage = images[Math.floor(Math.random() * images.length)];
+        document.getElementById("imageId").src = "images/" + oneImage.filename;
+    </script>
+    <p>
+        <script>document.write(oneImage.subject)</script>
+    </p>
+    <button onClick="window.location.reload();">show me another one</button>
+</div>
+
+
+<p style="padding-top: 150px; ">
+<p>
+    <a href="https://support.metadot.com/mytickets/create#/ticket-form/61596">
+        Contribute your pets image to be displayed here</a>.
+</p>
+    <a href="https://github.com/metadot/metadot-404-page">
+        This is open source software</a>.
+</p>
+</body>
+</html>
