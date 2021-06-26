@@ -4,7 +4,7 @@
 
 This is an HTML 404 page-not-found page that displays pet images, one at a time, load randomly.
 The pet images are contributed by Metadot staff and customers and also by people who just visit
-our [this open source repository](https://github.com/metadot/metadot-404-page).
+[this open source repository](https://github.com/metadot/metadot-404-page).
 
 This is the 404 page of Metadot websites:
 
