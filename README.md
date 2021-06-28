@@ -22,6 +22,9 @@ or
 [Open an issue and attach you pet image](https://github.com/metadot/metadot-404-page/issues/new).
 Make sure you tell us the name of the pet. Note that not all pictures are accepted for publication.
 
-The image should have a width of 800px.  JPEG format is preferred.
+The image should have a width of 800px.  JPEG format is preferred. File name should be in the
+following format: 
+
+    petname-ownername.jpeg
 
 Pull request to improve this project are welcome.
