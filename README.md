@@ -14,6 +14,15 @@ This is the 404 page of Metadot websites:
 
 and many more.
 
+## Dev
+
+````shell
+    npm install
+    npm start
+````
+
+## Contributions
+
 To contribute your pet picture simply open a ticket here:
 [Metadot helpdesk](https://support.metadot.com/mytickets/create#/ticket-form/61596)
 

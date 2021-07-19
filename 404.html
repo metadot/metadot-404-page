@@ -32,8 +32,14 @@
 
     <script>
         images = [
-            {filename: 'zeus-guermeur2.jpeg', author: 'Daniel Guermeur', subject: 'Zeus Guermeur'},
-            {filename: 'zeus-guermeur1.jpeg', author: 'Daniel Guermeur', subject: 'Zeus Guermeur'},
+            {filename: 'zeus-guermeur-2.jpeg', attribute: 'Daniel Guermeur', catName: 'Zeus Guermeur'},
+            {filename: 'zeus-guermeur-1.jpeg', attribute: 'Daniel Guermeur', catName: 'Zeus Guermeur'},
+            {filename: 'specialAgentFoxMulder-johnOchs-1.jpg', attribute: 'John Ochs', catName: 'Special Agent Fox Mulder'},
+            {filename: 'hobbes-workingHardWhileHardlyWorking-1.jpg', attribute: 'Working hard while hardly working', catName: 'Hobbes'},
+            {filename: 'ceecee-joaquinD-1.jpeg', attribute: 'Joaquin D', catName: 'Ceecee'},
+            {filename: 'ceecee-joaquinD-2.jpeg', attribute: 'Joaquin D', catName: 'Ceecee'},
+            {filename: 'george-gingerModelS-1.jpg', attribute: 'Ginger Model S', catName: 'George'},
+            {filename: 'leia-jonathanMcMillan-1.jpg', attribute: 'Jonathan McMillan', catName: 'Leia'},
         ];
     </script>
 <body>
@@ -45,24 +51,25 @@
 </div>
 
 <div style="text-align: center;">
-    <img id='imageId' src="" style='border: solid 5px #333; max-width: 550px;'/>
+    <img id='imageId' src="" style='border: solid 5px #333; max-width: 550px;' title=""/>
     <script type="text/javascript">
         const oneImage = images[Math.floor(Math.random() * images.length)];
         document.getElementById("imageId").src = "/images-404/" + oneImage.filename;
+        document.getElementById("imageId").title = oneImage.catName;
     </script>
     <p>
-        <script>document.write(oneImage.subject)</script>
+        <script>document.write(oneImage.catName)</script>
     </p>
     <button onClick="window.location.reload();">show me another one</button>
 </div>
 
 <div style="padding-top: 150px; ">
     <p>
-        <a href="https://support.metadot.com/mytickets/create#/ticket-form/61596">
+        <a href="https://support.metadot.com/mytickets/create#/ticket-form/61596" target="_blank">
             Contribute your pets image to be displayed here</a>.
     </p>
     </p>
-    <a href="https://github.com/metadot/metadot-404-page">
+    <a href="https://github.com/metadot/metadot-404-page" target="_blank">
         This is open source software</a>.
     </p>
 </div>
