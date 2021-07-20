@@ -34,6 +34,6 @@ Make sure you tell us the name of the pet. Note that not all pictures are accept
 The image should have a width of 800px.  JPEG format is preferred. File name should be in the
 following format: 
 
-    petname-ownername.jpeg
+    petname-ownername-N.jpeg
 
 Pull request to improve this project are welcome.
